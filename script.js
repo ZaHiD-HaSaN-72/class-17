@@ -16,9 +16,7 @@ function countryInfo(){
          <h2>Capital: ${data.capital}</h2>
          <h2>Population: ${data.population}</h2>
          <h2>Country-code: ${data.cca2}</h2>
-         <h2>Currency: ${data.currencies.XPF.name}</h2>
-         <button class="btn">See more</button>
-            
+         <button class="btn">See more</button>  
         `;
         console.log(mainContainer);
         mainContainer.appendChild(textBox);
