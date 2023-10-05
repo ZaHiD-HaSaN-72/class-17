@@ -1,6 +1,6 @@
 function countryInfo(){
 
-    fetch('country.json')
+    fetch('countrylist.json')
 .then(response => response.json())
 .then(datas => {
 
@@ -10,12 +10,15 @@ function countryInfo(){
         textBox.classList.add("Codata");
          textBox.innerHTML = `
         
-         <img src="${data.flag}" alt="country-flag">
-        <h1>country: ${data.name}</h1>
-        <h2>countryCode: ${data.code}</h2>
-        <h2>capital: ${data.capital}</h2>
-        <h2>language: ${data.language.name}</h2>
-        <h2>cellCode: ${data.dialling_code}</h2>
+         <h1 class="flags">Flag: &nbsp;<img src="${data.flags.png}" alt="country-flag"></h1>
+         <h1>Country: ${data.name.common}</h1>
+         <h2>Dialling_Code: ${data.idd.root}</h2>
+         <h2>Capital: ${data.capital}</h2>
+         <h2>Population: ${data.population}</h2>
+
+         <h2>Country-code: ${data.cca2}</h2>
+
+         
             
         `;
         console.log(mainContainer);
