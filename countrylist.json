@@ -225,7 +225,7 @@
       "status": "officially-assigned",
       "unMember": false,
       "currencies": {
-        "EUR": {
+        "EUR": { 
           "name": "Euro",
           "symbol": "€"
         }
