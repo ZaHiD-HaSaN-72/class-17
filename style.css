@@ -71,9 +71,10 @@ button{
 }
 #backBtn{
     position: absolute;
+    top: 89px;
     background-color: rgb(254, 144, 18);
     text-decoration: none;
-    padding: 0px 20px 9px;
+    padding: 0px 20px 8px;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
@@ -83,7 +84,7 @@ button{
    
 }
 #backBtn>span{
-    font-size: 35px;
+    font-size: 1.8rem;
 }
 .btnBox{
 display: flex;
@@ -91,3 +92,35 @@ justify-content: center;
 flex-wrap: wrap;
 gap: 3px;
 }
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: #1c1c1c;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
